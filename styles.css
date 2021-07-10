@@ -1,0 +1,194 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.hidden{
+    display: none;
+}
+
+.tv-background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/televizor-komnata-fon.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .tv-background{
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+    }
+ }
+
+.background{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.play-space{
+    width: 570px;
+    height: 450px;
+    border: 1px solid black;
+    position: absolute;
+    top: calc(50% - 225px);
+    left: calc(50% - 285px);
+    overflow: hidden;
+    border-radius: 100px;
+    border: none;
+    background-image: url(./img/noise.gif);
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .play-space{
+        width:100%;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        top: 0;
+        left: 0;
+        border-radius: 0px;
+    }
+ }
+ 
+ @media (orientation: landscape) and (max-width: 900px){
+    .play-space{
+        width:100%;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        top: 0;
+        left: 0;
+        border-radius: 0px;
+    }
+ }
+
+.pale {
+    background: rgb(202, 202, 200, 40%);
+}
+
+.button{
+    cursor: pointer;
+    color: rgb(54, 52, 52);
+    font-size: 16vh;
+    font-family: Mojito;
+    text-align: center;
+    transform: rotate(-10deg);
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.first-container{
+    z-index: 5;   
+}
+
+.second-button{
+    font-family: Mojito;
+    background-size: cover;
+    z-index: 100; 
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(37, 37, 37);
+}
+
+.second-button h1{
+    font-size: 16vh;
+    margin: 0px;
+    line-height: 1; 
+}
+
+.second-button p{
+    font-size: 6vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.rules{
+    width: 60%;
+    height: 70%;
+    background-image: url(./img/RULES.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0%;
+    left: 20%; 
+}
+
+@media (max-width: 768px){
+    .rules{
+        width: 100%;
+        height: 150vw;
+        left: 2vw;
+        top: unset;
+        bottom: 2vh;
+        background-image: url(./img/phoneRules.png);
+    } 
+}
+
+@media (orientation: landscape) and (max-width: 900px){
+    .rules{
+        width: 50%;
+        height: 75vw;
+        left: 25%;
+        top: unset;
+        bottom: 2vh;
+        background-image: url(./img/phoneRules.png);
+    }
+}
+
+.forms-0{
+    width: 60px;
+    height: 60px;
+    background-image: url(./img/image\ 10.jpg);
+    background-size: cover;
+    position: absolute;
+    bottom: 550px;
+    left: 50%;
+}
+
+.forms-1{
+    width: 120px;
+    height: 60px;
+    background-size: cover;
+    position: absolute;
+    bottom: 550px;
+    left: 50%;
+}
+
+.forms-2{
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    position: absolute;
+    bottom: 550px;
+    left: 50%;
+}
+
+@media screen and (max-width: 768px){
+   .forms-0, .forms-1, .forms-2 {
+       bottom: 750px;
+   } 
+}
+
+ @media screen and (max-width: 768px) and (min-height: 750px){
+    .forms-0, .forms-1, .forms-2 {
+        bottom: 1100px;
+    } 
+} 
+
+@font-face {
+    font-family: "Mojito"; 
+    src: url("./fonts/MojitoWeb.ttf") format("truetype"); 
+}
