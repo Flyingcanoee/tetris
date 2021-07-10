@@ -10,7 +10,7 @@ body{
 .tv-background{
     width: 100%;
     height: 100vh;
-    background-image: url(/img/televizor-komnata-fon.jpg);
+    background-image: url(./img/televizor-komnata-fon.jpg);
     background-size: cover;
     background-position: center;
 }
